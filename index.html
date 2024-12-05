@@ -5,35 +5,39 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Home</title>
     <link rel="stylesheet" href="styles1.css">
+    <script>
+        // Check if the user is logged in, using a session or localStorage flag
+        window.onload = function() {
+            var isLoggedIn = localStorage.getItem('isLoggedIn');
+            if (!isLoggedIn) {
+                // If not logged in, redirect to login page
+                window.location.href = 'login.html';
+            }
+        };
+    </script>
 </head>
 <body>
     <header>
-      <img src="logo.png" alt="Product Logo" class="logo">
+        <img src="logo.png" alt="Product Logo" class="logo">
         <nav>
-          <ul class="navbar">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="contact.html">Contact</a></li>
-            <li><a href="login.html">Logout</a></li>
-          </ul>
+            <ul class="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="login.html">Logout</a></li>
+            </ul>
         </nav>
-      </header>
-      <section class="features-section">
+    </header>
+    <section class="features-section">
         <img src="logo.png" alt="Product Logo" class="logo" height="100px">
-        
         <h2>Drum and Bugle Corps Merchandise</h2>
-        <img src="grp pic.jpg" alt="group pic" class="center" width="70%" >
-        <br>
-        <br>
-        <br> 
+        <img src="grp pic.jpg" alt="group pic" class="center" width="70%">
+        <br><br><br>
         <a href="merch.html" class="button-link">Click to See Uniforms</a>
-      </div>  
     </section>
     <footer>
-      <img src="logo.png" alt="Product Logo" class="logo">
-      <p>&copy; Copyright 2024</p>
+        <img src="logo.png" alt="Product Logo" class="logo">
+        <p>&copy; Copyright 2024</p>
     </footer>
-
-
 </body>
 </html>
